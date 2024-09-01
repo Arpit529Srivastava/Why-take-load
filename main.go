@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Println("makign a load balancer using golang")
+	fmt.Println("making a load balancer using golang")
 }
