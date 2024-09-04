@@ -1,0 +1,20 @@
+SOME BASIC QUESTIONS ABOUT LOAD BALANCER....(ignore if you know ;)
+
+Q:What is a Load Balancer?
+A: A Load Balancer is method of distributing network traffic serives to a pool of resources of an applcation.
+
+Q:What are network traffic?
+A: The amount of data moving across the server at a given time.
+
+Q:What are the applcation of Load Balancer?
+A: Just like the recent Codeforces Div(4) when there was too many requests the server crashed also while submitting the problem there was a slight 
+   delay. This was because of the too many requests that was asked by the client which results in the unavailability of the application or website.
+   Load balancers increase the fault tolerance of your systems by automatically detecting server problems and redirecting client traffic to available servers.
+   It can be used to intelligently balance and manage network traffic among multiple servers.
+
+Q:What is Load Balancer Algorithm?
+A: Set of rules by which the load balance manages the server.
+    I:STATIC ALGORHTIM
+    (a)Round Robin Algorithm
+        what it does is, consider you have two servers with equal specs 
+    (b)Weighted Round Robin
