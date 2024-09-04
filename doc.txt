@@ -16,5 +16,8 @@ Q:What is Load Balancer Algorithm?
 A: Set of rules by which the load balance manages the server.
     I:STATIC ALGORHTIM
     (a)Round Robin Algorithm
-        what it does is, consider you have two servers with equal specs 
+        what it does is, consider you have two servers with equal specs now when the client sends the requests it first goes to the 
+        first server then the second
+        example-->SERVER1=>contains(odd requests)
+                  SERVER2=>contains(even requests)
     (b)Weighted Round Robin
