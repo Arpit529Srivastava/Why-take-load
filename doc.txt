@@ -14,7 +14,9 @@ A: Just like the recent Codeforces Div(4) when there was too many requests the s
 
 Q:What is Load Balancer Algorithm?
 A: Set of rules by which the load balance manages the server.
-    I:STATIC ALGORHTIM
+
+    I:STATIC ALGORHTIM--> -server has prior knowledege about the server and their capacity and then tranfers requests according to it.
+                          -load cannot be re-transfered during the runtime.
     (a)Round Robin Algorithm
         what it does is, consider you have two servers with equal specs now when the client sends the requests it first goes to the 
         first server then the second.
@@ -23,3 +25,7 @@ A: Set of rules by which the load balance manages the server.
     (b)Weighted Round Robin
         This Algorithm fullfills the drawbacks of the round robin algorithm what it does is the load balance send the heavy or large requests to 
         the big server and the small requests to the small server.
+
+    II:DYNAMIC ALGORHTIM--> -It identifies the laod that need to be distributed to each server for the working.(example--1st server needs 2GB then gives a 2GB requests)
+                            -Load can be re-transfered during runtime.
+    (a)Least connection
