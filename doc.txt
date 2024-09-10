@@ -29,4 +29,16 @@ A: Set of rules by which the load balance manages the server.
     II:DYNAMIC ALGORHTIM--> -It identifies the laod that need to be distributed to each server for the working.(example--1st server needs 2GB then gives a 2GB requests)
                             -Load can be re-transfered during runtime.
                             best way to understand the concept of dynamic load balancing-->https://www.youtube.com/watch?v=HnapukJ5ftk&ab_channel=AutelGlobal
-    (a)Least connection
+
+         -->There are different types of dynamic load balancer but we will discuss this in another project.
+
+Q: How does a Load balancer works?   
+A: Companies or even a person who is building a server(like me ;) have a server farm(having multiple servers) so to handles such requests
+   end users send requests to the server for where it is directed to the load balancer and according to the algo you used it proccess the
+   requests and send to the servers and apis.
+
+>Different types of load balancers are-->(a):Application Load Balancer
+                                         (b):Network Load balancer
+                                         (c):Global Load Balancer
+                                         (d):DNS Load Balancing  
+                                         
