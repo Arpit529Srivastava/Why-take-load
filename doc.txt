@@ -28,4 +28,5 @@ A: Set of rules by which the load balance manages the server.
 
     II:DYNAMIC ALGORHTIM--> -It identifies the laod that need to be distributed to each server for the working.(example--1st server needs 2GB then gives a 2GB requests)
                             -Load can be re-transfered during runtime.
+                            best way to understand the concept of dynamic load balancing-->https://www.youtube.com/watch?v=HnapukJ5ftk&ab_channel=AutelGlobal
     (a)Least connection
