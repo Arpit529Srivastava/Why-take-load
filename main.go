@@ -50,3 +50,7 @@ func (s *simpleserver) Address() string {
 func (s *simpleserver) IsAlive() bool {
 	return true
 }
+// Serve method forwards the HTTP request to the backend server using the reverse proxy
+func (s *simpleserver) Serve(rw http.ResponseWriter, r *http.Request) {
+	s.proxy.ServeHTTP(rw, r) // Use the reverse proxy to handle the request
+}
