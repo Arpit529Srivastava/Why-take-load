@@ -64,3 +64,17 @@ func (lb *LoadBalancer) getNextAvailableServer() Server {
 	lb.roundrobin++ // Move to the next server for future requests
 	return server   // Return the available server
 }
+// serveProxy method forwards the request to the selected backend server
+func (lb *LoadBalancer) serveProxy(rw http.ResponseWriter, r *http.Request) {
+	targetServer := lb.getNextAvailableServer()  // Get the next available server
+	fmt.Printf("forwarding request to address %q \n", targetServer.Address()) // Log the target server
+	targetServer.Serve(rw, r) // Forward the request to the selected server
+}
+
+// handlErr function handles any errors, printing the error message and exiting the program
+func handlErr(err error) {
+	if err != nil {
+		fmt.Println("error has occurred", err)
+		os.Exit(1) // Exit if an error occurs
+	}
+}
