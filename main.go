@@ -14,3 +14,8 @@ type Server interface {
 	IsAlive() bool              // Method to check if the server is alive
 	Serve(rw http.ResponseWriter, r *http.Request) // Method to serve the HTTP request
 }
+// simpleserver struct represents a simple backend server with an address and reverse proxy
+type simpleserver struct {
+	addr  string                 // Server address
+	proxy httputil.ReverseProxy   // Reverse proxy to forward the requests
+}
