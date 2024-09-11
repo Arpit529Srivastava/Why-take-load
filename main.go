@@ -44,3 +44,6 @@ func NewLoadBalancer(port string, servers []Server) *LoadBalancer {
 		servers:    servers, // Set the list of backend servers
 	}
 }
+func (s *simpleserver) Address() string { 
+	return s.addr 
+}
