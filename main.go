@@ -19,3 +19,13 @@ type simpleserver struct {
 	addr  string                 // Server address
 	proxy httputil.ReverseProxy   // Reverse proxy to forward the requests
 }
+
+// Constructor function for creating a new simpleserver instance
+func newsimplesever(addr string) *simpleserver {
+	serverurl, err := url.Parse(addr) // Parse the server address as a URL
+	handlErr(err)                     // Handle any errors that occur during parsing
+	return &simpleserver{
+		addr:  addr,                                // Set the address
+		proxy: *httputil.NewSingleHostReverseProxy(serverurl), // Create a new reverse proxy to the given server
+	}
+}
