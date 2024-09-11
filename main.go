@@ -54,3 +54,13 @@ func (s *simpleserver) IsAlive() bool {
 func (s *simpleserver) Serve(rw http.ResponseWriter, r *http.Request) {
 	s.proxy.ServeHTTP(rw, r) // Use the reverse proxy to handle the request
 }
+// getNextAvailableServer method implements round-robin selection of servers
+func (lb *LoadBalancer) getNextAvailableServer() Server {
+	server := lb.servers[lb.roundrobin%len(lb.servers)] // Select the next server in the list
+	for !server.IsAlive() {  // Check if the server is alive; if not, move to the next one
+		lb.roundrobin++
+		server = lb.servers[lb.roundrobin%len(lb.servers)]
+	}
+	lb.roundrobin++ // Move to the next server for future requests
+	return server   // Return the available server
+}
