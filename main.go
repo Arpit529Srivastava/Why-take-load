@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http/httputil"
+)
 
-func main(){
-	fmt.Println("making a load balancer using golang")
-	fmt.Println("will start working with the project")
+type simpleserver struct{
+	addr string
+	proxy httputil.ReverseProxy
 }
+
+func newsimplesever(add string)
