@@ -29,3 +29,10 @@ func newsimplesever(addr string) *simpleserver {
 		proxy: *httputil.NewSingleHostReverseProxy(serverurl), // Create a new reverse proxy to the given server
 	}
 }
+
+// LoadBalancer struct contains the logic for distributing requests to servers
+type LoadBalancer struct {
+	port       string   // Port where the load balancer is running
+	roundrobin int      // Index to keep track of which server to use next
+	servers    []Server // Slice of servers that the load balancer will distribute traffic to
+}
