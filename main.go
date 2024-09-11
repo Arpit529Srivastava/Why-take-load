@@ -47,3 +47,6 @@ func NewLoadBalancer(port string, servers []Server) *LoadBalancer {
 func (s *simpleserver) Address() string { 
 	return s.addr 
 }
+func (s *simpleserver) IsAlive() bool {
+	return true
+}
