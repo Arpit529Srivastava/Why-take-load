@@ -36,3 +36,11 @@ type LoadBalancer struct {
 	roundrobin int      // Index to keep track of which server to use next
 	servers    []Server // Slice of servers that the load balancer will distribute traffic to
 }
+// NewLoadBalancer constructor initializes a LoadBalancer with a given port and list of servers
+func NewLoadBalancer(port string, servers []Server) *LoadBalancer {
+	return &LoadBalancer{
+		port:       port,
+		roundrobin: 0,      // Start with the first server in the list
+		servers:    servers, // Set the list of backend servers
+	}
+}
