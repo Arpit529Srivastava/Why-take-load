@@ -40,5 +40,7 @@ A: Companies or even a person who is building a server(like me ;) have a server 
 >Different types of load balancers are-->(a):Application Load Balancer
                                          (b):Network Load balancer
                                          (c):Global Load Balancer
-                                         (d):DNS Load Balancing  
+                                         (d):DNS Load Balancing 
+
                                          
+                                                                              
