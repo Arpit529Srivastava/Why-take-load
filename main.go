@@ -92,11 +92,11 @@ func handlErr(err error) {
 func main() {
 	// List of backend servers to forward traffic to
 	servers := []Server{
-		newsimplesever("https://facebook.com"),   // Backend server 1
+		newsimplesever("htt ps://facebook.com"),   // Backend server 1
 		newsimplesever("https://www.github.com"), // Backend server 3
 		newsimplesever("https://www.apple.com"),  // Backend server 2
 	}
-	lb := NewLoadBalancer("8000", servers) // Create a new load balancer listening on port 8000
+	lb := NewLoadBalancer("8080", servers) // Create a new load balancer listening on port 8000
 
 	// Handle incoming requests and forward them to the backend servers
 	handleRedirect := func(rw http.ResponseWriter, r *http.Request) {
@@ -105,6 +105,6 @@ func main() {
 
 	http.HandleFunc("/", handleRedirect)                        // Handle all requests to "/"
 	fmt.Printf("serving requests at 'localhost:%s'\n", lb.port) // Log the port the load balancer is running on
-	http.ListenAndServe(":"+lb.port, nil)                       // Start the HTTP server on the specified port
+	http.ListenAndServe(":8080", nil)                       // Start the HTTP server on the specified port
 	//new day
 }
