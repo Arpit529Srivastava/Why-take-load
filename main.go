@@ -92,7 +92,7 @@ func handlErr(err error) {
 func main() {
 	// List of backend servers to forward traffic to
 	servers := []Server{
-		newsimplesever("htt ps://facebook.com"),   // Backend server 1
+		newsimplesever("https://facebook.com"),   // Backend server 1
 		newsimplesever("https://www.github.com"), // Backend server 3
 		newsimplesever("https://www.apple.com"),  // Backend server 2
 	}
