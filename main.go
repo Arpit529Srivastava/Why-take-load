@@ -106,5 +106,5 @@ func main() {
 	http.HandleFunc("/", handleRedirect)                        // Handle all requests to "/"
 	fmt.Printf("serving requests at 'localhost:%s'\n", lb.port) // Log the port the load balancer is running on
 	http.ListenAndServe(":8080", nil)                       // Start the HTTP server on the specified port
-	//new day
+	
 }
