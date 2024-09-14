@@ -92,8 +92,8 @@ func handlErr(err error) {
 func main() {
 	// List of backend servers to forward traffic to
 	servers := []Server{
-		newsimplesever("https://facebook.com"),   // Backend server 1
-		newsimplesever("https://www.github.com"), // Backend server 3
+		newsimplesever("http://localhost:8081"),   // Backend server 1
+		newsimplesever("http://localhost:8082"), // Backend server 3
 		newsimplesever("https://www.apple.com"),  // Backend server 2
 	}
 	lb := NewLoadBalancer("8080", servers) // Create a new load balancer listening on port 8000
