@@ -27,7 +27,7 @@ func newsimplesever(addr string) *simpleserver {
 	handlErr(err)
 	return &simpleserver{
 		addr:  addr,
-		proxy: *httputil.NewSingleHostReverseProxy(serverurl), 
+		proxy: *httputil.NewSingleHostReverseProxy(serverurl),
 	}
 }
 
@@ -92,9 +92,9 @@ func handlErr(err error) {
 func main() {
 	// List of backend servers to forward traffic to
 	servers := []Server{
-		newsimplesever("http://localhost:8081"),   // Backend server 1
+		newsimplesever("http://localhost:8081"), // Backend server 1
 		newsimplesever("http://localhost:8082"), // Backend server 3
-		newsimplesever("https://www.apple.com"),  // Backend server 2
+		newsimplesever("http://localhost:8083"), // Backend server 2
 	}
 	lb := NewLoadBalancer("8080", servers) // Create a new load balancer listening on port 8000
 
@@ -105,6 +105,6 @@ func main() {
 
 	http.HandleFunc("/", handleRedirect)                        // Handle all requests to "/"
 	fmt.Printf("serving requests at 'localhost:%s'\n", lb.port) // Log the port the load balancer is running on
-	http.ListenAndServe(":8080", nil)                       // Start the HTTP server on the specified port
-	
+	http.ListenAndServe(":8080", nil)                           // Start the HTTP server on the specified port
+
 }
