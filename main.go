@@ -27,7 +27,7 @@ func newsimplesever(addr string) *simpleserver {
 	handlErr(err)
 	return &simpleserver{
 		addr:  addr,
-		proxy: *httputil.NewSingleHostReverseProxy(serverurl), //creates a reverse proxy for the serverurl
+		proxy: *httputil.NewSingleHostReverseProxy(serverurl), 
 	}
 }
 
