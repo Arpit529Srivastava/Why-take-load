@@ -1,0 +1,84 @@
+[{
+    "_id": "42",
+    "name": "The Infinite Horizon",
+    "release_date": "2023-07-16",
+    "director": "Jane Doe",
+    "stars": 4
+  },
+  {
+    "_id": "17",
+    "name": "Beyond the Mist",
+    "release_date": "2021-03-22",
+    "director": "John Smith",
+    "stars": 3
+  },
+  {
+    "_id": "29",
+    "name": "Echoes of Eternity",
+    "release_date": "2020-11-09",
+    "director": "Alice Johnson",
+    "stars": 5
+  },
+  {
+    "_id": "34",
+    "name": "The Last Beacon",
+    "release_date": "2022-05-12",
+    "director": "Robert Lee",
+    "stars": 4
+  },
+  {
+    "_id": "58",
+    "name": "Whispers in the Dark",
+    "release_date": "2021-08-19",
+    "director": "Emily Carter",
+    "stars": 2
+  },
+  {
+    "_id": "63",
+    "name": "The Silent Voyager",
+    "release_date": "2019-02-14",
+    "director": "Michael Brown",
+    "stars": 5
+  },
+  {
+    "_id": "77",
+    "name": "Lost in Time",
+    "release_date": "2024-01-01",
+    "director": "Sophia Green",
+    "stars": 3
+  },
+  {
+    "_id": "82",
+    "name": "Shadows of Tomorrow",
+    "release_date": "2022-09-30",
+    "director": "David Wilson",
+    "stars": 4
+  },
+  {
+    "_id": "96",
+    "name": "The Forgotten Path",
+    "release_date": "2023-06-07",
+    "director": "Lucas Martinez",
+    "stars": 3
+  },
+  {
+    "_id": "105",
+    "name": "Rise of the Guardians",
+    "release_date": "2020-12-25",
+    "director": "Olivia Clark",
+    "stars": 4
+  },
+  {
+    "_id": "69",
+    "name": "Intersteller",
+    "release_date": "20:09:2014",
+    "director": "Christopher Nolan",
+    "stars": 9
+  },
+  {
+    "_id": "1",
+    "name": "Inception",
+    "release_date": "2010-07-16",
+    "director": "Christopher Nolan",
+    "stars": 5
+  }]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "4",
+        "title": "Hamlet",
+        "author": "William Shakespeare",
+        "quality": 2
+    },
+    {
+        "id": "5",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "quality": 3
+    },
+    {
+        "id": "6",
+        "title": "1984",
+        "author": "George Orwell",
+        "quality": 4
+    },
+    {
+        "id": "7",
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "quality": 3
+    },
+    {
+        "id": "8",
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "quality": 2
+    },
+    {
+        "id": "9",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "quality": 5
+    },
+    {
+        "id": "10",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "quality": 4
+    },
+    {
+        "id": "11",
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "quality": 4
+    },
+    {
+        "id": "12",
+        "title": "The Odyssey",
+        "author": "Homer",
+        "quality": 5
+    },
+    {
+        "id": "13",
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "quality": 4
+    }
+]
