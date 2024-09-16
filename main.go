@@ -85,7 +85,7 @@ func (lb *LoadBalancer) serveProxy(rw http.ResponseWriter, r *http.Request) {
 func handlErr(err error) {
 	if err != nil {
 		fmt.Println("error has occurred", err)
-		os.Exit(1) // Exit if an error occurs
+		os.Exit(1) 
 	}
 }
 
