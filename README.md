@@ -1,5 +1,5 @@
 # Simple Load Balancer with Round Robin Algorithm
-### This project is a basic implementation of a load balancer in Go using the Round Robin algorithm. The load balancer distributes incoming HTTP requests to a set of backend servers in a circular order.
+### This project is a basic implementation of a load balancer in Go using the Round Robin algorithm. The load balancer distributes incoming HTTP requests to a set of backend servers in a circular order. The project also has Three RESTApi. 
 
 ## A load balancer performs the following functions:
 
