@@ -85,6 +85,4 @@ Once everything is up and running, you can send HTTP requests to the load balanc
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-### License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+### Hoping to see new pr for this project and if you have any issues regarding the project create an issue 👍
